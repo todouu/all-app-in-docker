@@ -1,8 +1,4 @@
 #!/bin/bash
 
-docker run -it --rm -v $(pwd):/apps -w /apps \
-          -v ~/.kube:/root/.kube \
-          -v ~/.helm:/root/.helm \
-          -v ~/.helm/config:/root/.config/helm \
-          -v ~/.helm/cache:/root/.cache/helm \
-          alpine/helm:3.13.3 $@
+docker run --rm -v $(pwd):/lint -w /lint \
+          ghcr.io/antonbabenko/pre-commit-terraform run -a
