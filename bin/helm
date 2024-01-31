@@ -1,8 +1,8 @@
 #!/bin/bash
 
 docker run -it --rm -v $(pwd):/apps -w /apps \
-          -v ~/.kube:/root/.kube \
-          -v ~/.helm:/root/.helm \
-          -v ~/.helm/config:/root/.config/helm \
-          -v ~/.helm/cache:/root/.cache/helm \
+          -v $HOME/.kube:/root/.kube \
+          -v $HOME/.helm:/root/.helm \
+          -v $HOME/.helm/config:/root/.config/helm \
+          -v $HOME/.helm/cache:/root/.cache/helm \
           alpine/helm:3.13.3 $@

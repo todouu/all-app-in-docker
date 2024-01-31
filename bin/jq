@@ -1,4 +1,4 @@
 #!/bin/bash
 
 docker run -i --rm -v $(pwd):/apps -w /apps \
-          jetbrainsinfra/jq jq $@
+          todou/jq:1.0 $@
