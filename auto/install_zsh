@@ -2,7 +2,7 @@
 
 echo "=============================================="
 echo "Copy and override bin path to your home path"
-cp -rf bin $HOME/bin
+cp -rf bin/* $HOME/bin
 ls -l $HOME/bin
 echo "=============================================="
 

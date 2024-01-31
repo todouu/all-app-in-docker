@@ -8,6 +8,10 @@ Even I just uninstall some tools, they still put \*shift in my home path
 
 So I decide using docker to isolate all of them, but of course, I don't want it block my daily develop work.
 
+# required tools
+
+## Docker OR container cli interface tool(podman)
+
 # How to use
 
 running auto/install_zsh, them it will copy all bin file to your home folder, and adding bin file to your system path.
