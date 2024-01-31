@@ -8,9 +8,11 @@ Even I just uninstall some tools, they still put \*shift in my home path
 
 So I decide using docker to isolate all of them, but of course, I don't want it block my daily develop work.
 
-# required tools
+# required
 
-## Docker OR container cli interface tool(podman)
+- Container CLI Interface (Docker, podman, etc)
+- ZSH
+- X86 (I dont have ARM device yet )
 
 # How to use
 
