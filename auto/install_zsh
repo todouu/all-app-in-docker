@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "=============================================="
+echo "Copy and override bin path to your home path"
+cp -rf bin $HOME/bin
+ls -l $HOME/bin
+echo "=============================================="
+
+echo "Add bin path to your system path"
+bin_path="export PATH=\$HOME/bin:\$PATH"
+shell_config="$HOME/.zshrc"
+if grep -qFx "$bin_path" "$shell_config"; then
+    echo "Line already exists, not adding."
+else
+    echo "$bin_path" >> "$shell_config"
+    echo "Line added successfully."
+fi
+echo "=============================================="

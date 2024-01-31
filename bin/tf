@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker run -it --rm -v $(pwd):/apps -w /apps \
+          -v ~/.terraformrc:/root/.terraformrc \
+          -v ~/.terraform.d:/root/.terraform.d \
+          -v ~/.aliyun:/root/.aliyun \
+          hashicorp/terraform:1.6.6 $@
