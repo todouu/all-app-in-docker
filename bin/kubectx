@@ -2,4 +2,4 @@
 
 docker run -it --rm -v $(pwd):/apps -w /apps \
           -v $HOME/.kube:/root/.kube \
-          binbash/k8s-kubectx:latest kubectx $@
+          todou/kubectx:1.0 $@
