@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run --rm -v $(pwd):/apps -w /apps \
+docker run -i --rm -v $(pwd):/apps -w /apps \
           -v $HOME/.terraformrc:/root/.terraformrc \
           -v $HOME/.terraform.d:/root/.terraform.d \
           -v $HOME/.aliyun:/root/.aliyun \

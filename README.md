@@ -17,3 +17,13 @@ So I decide using docker to isolate all of them, but of course, I don't want it 
 # How to use
 
 running auto/install_zsh, them it will copy all bin file to your home folder, and adding bin file to your system path.
+
+# Know issue
+
+### Terraform
+
+If you install terraform plugin in vscode you need run this
+
+```
+cp bin/terraform /usr/local/bin/terraform
+```
