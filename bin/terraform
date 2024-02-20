@@ -4,4 +4,4 @@ docker run -i --rm -v $(pwd):/apps -w /apps \
           -v $HOME/.terraformrc:/root/.terraformrc \
           -v $HOME/.terraform.d:/root/.terraform.d \
           -v $HOME/.aliyun:/root/.aliyun \
-          hashicorp/terraform:1.6.6 $@
+          hashicorp/terraform:1.6.6 "$@"

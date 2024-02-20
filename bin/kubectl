@@ -2,4 +2,4 @@
 
 docker run --rm -v $(pwd):/apps -w /apps \
           -v $HOME/.kube:/.kube \
-          bitnami/kubectl:latest $@
+          bitnami/kubectl:latest "$@"

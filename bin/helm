@@ -5,4 +5,4 @@ docker run --rm -v $(pwd):/apps -w /apps \
           -v $HOME/.helm:/root/.helm \
           -v $HOME/.helm/config:/root/.config/helm \
           -v $HOME/.helm/cache:/root/.cache/helm \
-          alpine/helm:3.13.3 $@
+          alpine/helm:3.13.3 "$@"

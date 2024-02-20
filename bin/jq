@@ -1,4 +1,4 @@
 #!/bin/bash
 
 docker run -i --rm -v $(pwd):/apps -w /apps \
-          todou/jq:1.0 $@
+          todou/jq:1.0 "$@"

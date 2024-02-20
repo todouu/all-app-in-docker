@@ -2,4 +2,4 @@
 
 docker run -t --rm -v $(pwd):/apps -w /apps \
           -v $HOME/.kube:/root/.kube \
-          todou/kubectx:1.0 $@
+          todou/kubectx:1.0 "$@"

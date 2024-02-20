@@ -1,4 +1,4 @@
 #!/bin/bash
 
 docker run -i --rm -v $(pwd):/apps -w /apps \
-           netdata/wget:latest wget $@
+           netdata/wget:latest wget "$@"
