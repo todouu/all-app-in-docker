@@ -2,4 +2,4 @@
 
 docker run -it --rm -v $(pwd):/apps -w /apps \
           -v $HOME/.aliyun:/root/.aliyun \
-          todou/aliyun-cli:1.1 "$@"
+          todou/acs-sso:1.0 "$@"
