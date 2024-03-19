@@ -2,4 +2,4 @@
 
 docker run --rm -v $(pwd):/terraform-docs \
           quay.io/terraform-docs/terraform-docs:0.17.0 \
-          markdown /terraform-docs > GEN_README.md
+          markdown /terraform-docs > README.md
