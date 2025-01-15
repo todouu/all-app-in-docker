@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run -it --rm \
+          -v $(pwd):/apps -w /apps \
+          -v $HOME/.aws:/root/.aws \
+          -v $HOME/.ansible:/root/.ansible \
+          --entrypoint "ansible-playbook" \
+          ghcr.io/ansible/community-ansible-dev-tools:v24.12.0 "$@"
